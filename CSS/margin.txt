@@ -1,0 +1,16 @@
+Shorthand property of margin
+margin: 10px   15px   5px   20px;
+        top    right  bottom  left
+
+margin:  10px   15px         30px
+        top      leftright   bottom
+
+margin:  10px            20px 
+        top&bottom        right and leftright
+
+margin:  10px(all side)
+
+margin:  auto;(align element to the center across horizontal axis)
+
+margin:  10px   auto  15px;
+margin accepts negative value 

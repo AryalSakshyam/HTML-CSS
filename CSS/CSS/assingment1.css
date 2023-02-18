@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.hero-container {
+    background-color: rgb(14, 58, 96);
+    /* height: 500px; content bhaye paxi matra rakhney*/
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.hero-container .left {
+    width: 30%;
+
+}
+
+.hero-container .left h1 {
+    /*text style*/
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.hero-container .left p {
+    font-size: 22px;
+    font-weight: bold;
+    /*bold garna lai*/
+    margin-top: 15px;
+}
+
+.left button {
+    background-color: rgb(38, 199, 185);
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 50px;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.left:hover button {
+    background-color: rgb(112, 189, 189);
+    transition: 0.5s;
+}
+
+.left a {
+    color: #FFFF;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.left a i {
+    font-size: 40px;
+    line-height: 5px;
+}
+
+.hero-container .right {
+    width: 30%;
+    height: 400px;
+    animation: up-down 2s infinite alternate-reverse;
+}
+
+.hero-container .right img {
+    /*image style*/
+    height: 100%;
+    width: 100%;
+
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+
+}
+
+/* Style of client section  */
+.client-container {
+    background-color: rgb(235, 223, 223);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+
+}
+
+.client-container .client {
+    width: 8%;
+    height: 80px;
+}
+
+.client img {
+    height: 50%;
+    filter: grayscale(1.5);
+}
+
+.client img:hover {
+    filter: none;
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+/* style of servicescontainer */
+.services-container {
+    text-align: center;
+    background-color: rgb(142, 142, 162);
+}
+
+.services-container h1 {
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #37517e;
+    font-weight: bold;
+}
+
+.services-container p {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.services-container .service-box {
+    width: 85%;
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-box .box {
+    width: 23%;
+    height: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+}
+
+.service-box .box:hover {
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+
+/* style of team container  */
+.team-container {
+    text-align: center;
+    background-color: rgb(208, 208, 220);
+
+}
+
+.team-container h1 {
+
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #37517e;
+    font-weight: bold;
+}
+
+.team-container p {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.team-container .team-box {
+    width: 85%;
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.team-box .box {
+    width: 48%;
+    height: 200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: rgb(249, 246, 242);
+    margin-bottom: 30px;
+}
+
+.team-box .box:hover {
+    transform: translateY(-10px);
+    transition: 1s;
+}
+
+.box img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 30px;
+    /* padding-top: 20px; */
+
+}
+
+ .box h3 {
+    margin-top: 20px;
+    padding-left: 50px;
+    text-align: justify;
+    color: #37517e;
+    padding-left: 28%;
+}
+.box h4{
+    margin-top: 10px;
+    text-align:justify;
+    font-weight: normal;
+    padding-left: 28%;
+
+}
+.box p{
+    text-align: justify;
+   font-size: 17px;
+   padding-left: 28%;
+} 
+.box a i{
+/* margin-right: 20px;    */
+ font-size: 20px;
+    margin: 5px auto 5px ;
+    padding: 5px auto 5px;
+    
+}
+.box button{
+    margin-left: 10px;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(249, 246, 242);
+    
+}
+.box a i:hover{
+    color: white;
+}
+.box button:hover{
+    background-color: rgba(63, 161, 161, 0.5);
+    transition: all 0.5s;
+}

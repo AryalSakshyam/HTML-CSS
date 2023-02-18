@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <!--For internal Css-->
+    <link rel="shortcut icon" href="images/download.png" type="image/x-icon">
+    <style>
+        /*"Element selector" element ko naam same rakhera style garincha b*/
+        h1 {
+            /* (for color) */
+            color: red;
+            /* for font-size: ; */
+            font-size: 50px;
+            text-align: center;
+            /* for changing palce of text*/
+        }
+
+        .demo-title {
+            /*class ko naam cha bhaney '.' "dot" hucha aagadi ani class j cha tei hunu parcha same  */
+            color: dodgerblue;
+            text-align: center;
+            text-decoration: underline;
+            /*for underline*/
+
+        }
+
+        .test {
+            background-color: aqua;
+        }
+
+        #title {
+            /*"#" is id selector. id selector gets more preference than class selector*/
+            color: chartreuse;
+        }
+
+        .demo-title,
+        #title,
+        h1 {
+            /*grouping selector=yesh ma class id selector lai eutai group ma banaincha*/
+            text-transform: capitalize;
+        }
+
+        /* universal selector"*" */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is element selectors</h1><!--<h1>,<p> haru lai element bhannincha-->
+    <h1>Heading one</h1>
+    <h2 class="demo-title test">This is class selector</h2><!--class ma num bata strat ra capital bata garna mildaina-->
+    <!--Class use garey ra element reuse garnamilcha ani class naam reuse garna milcha-->
+    <!--Class ma space diye pachi arko naam suru huncha -->
+    <h2>Heading two</h2>
+    <h2 id="title">This is id selector</h2>
+</body>
+
+</html>

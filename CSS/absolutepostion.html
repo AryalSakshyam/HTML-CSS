@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute-postion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .demo {
+            height: 300px;
+            width: 600px;
+            margin: auto;
+            position: relative;
+            /*Parent ma postion define garney */
+        }
+
+        .demo img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .demo .btn {
+            background-color: brown;
+            color: #fff;
+            border: none;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            position: absolute;
+            /*parent ma postion define bhako karan tei postion respaective ma chaliraa cha*/
+            left: 35%;
+            top: 40%;
+        }
+
+        .demo .left {
+            background-color: #58D68D;
+            color: white;
+            font-size: 20px;
+            border: none;
+            padding: 20px;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            position: absolute;
+            right: 100%;
+            bottom: 79%;
+        }
+        .demo .right{
+            background-color: #58D68D;
+            color: white;
+            font-size: 20px;
+            border: none;
+            padding: 20px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            position: absolute;
+            left: 100%;
+            bottom: 79%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <pre>Where there is a parent and its postion is define</pre>
+    <div class="demo">
+        <img src="images/qwerty.jpg" alt="">
+        <button class="btn">View Details </button>
+        <button class="left">&lt;</button><!--Lt bhanya less than-->
+        <button class="right">&gt;</button><!--Gt bhanya greater than-->
+    </div>
+
+</body>
+
+</html>

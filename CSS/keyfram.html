@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: dodgerblue;
+
+        }
+
+        .container {
+            height: 400px;
+            width: 400px;
+            margin: 15px auto 0;
+            animation: up-down 3s ease-in-out infinite alternate-reverse;/*animation ko lagi tool */
+            /*Naam j rakhda ni huncha Number hunu hudaina*/
+
+        }
+
+        .container img {
+            height: 100%;
+            width: 100%;
+        }
+        @keyframes up-down {
+            0%{
+                transform: translateY(-10px);
+            }
+            25%{
+                transform: translateX(-50px);
+            }
+            50%{
+                transform:translateX(50px) ;
+            }
+            100%{
+                transform: translateY(10px);
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/qwerty.jpg" alt="">
+    </div>
+</body>
+
+</html>

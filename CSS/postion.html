@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/qwerty.jpg" type="image/x-icon">
+    <title>Postion</title>
+<style>
+    .demo{
+        height:  400px;
+        width: 600px;
+        background-color: #59ECB9;
+        position: relative;
+        bottom: 20px;/*bottom rakhey pachi top rakhna mildaina*/
+        right: 20px;
+    }
+    .absolute-postion{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color:#ABB2B9 ;
+        position: absolute;
+        /* top: 0; */
+        bottom: 0;
+        right: 0;
+    }
+</style>
+</head>
+<body>
+    <!-- Used for the alingment  -->
+    <pre>
+        I. static Postion
+        II. Relative Postion
+        III. Absolute Postion
+        IV. sticky Postion
+        V. Fixed Postion 
+    </pre>
+    <h2>Relative Postion</h2><!-- Aafnai postion lai reference liyera move huncha. right rakhda right bata left lira move huncha 
+      -->
+    <div class="demo"></div>
+    <!-- Parent chaina bhaney body ko response ma kaam garcha. 
+    parent cha postion chaina bhaney pani body ko response ma kaam garcha  -->
+    <div class="absolute-postion"></div>
+</body>
+</html>

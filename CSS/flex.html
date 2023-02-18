@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="shortcut icon" href="images/qwerty.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container-demo {
+            background-color: aqua;
+            /* parent ma flex rakhyo bhaney tes bhitra ko block elemnt eytai line ma aaaucha  */
+            display: flex;
+            flex-wrap: wrap;
+            /*Yesley jati width cha teti nai raakhcha aatey na bhaney arko line ma lancha*/
+            /* justify-content: space-evenly' */
+            /* justify content' flex use garey pachi mara use garna milcha.Yo chai horizontal axis maa matra kaam garcha  */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+        }
+
+        .container-demo .demo {
+            height: 300px;
+            width: 300px;
+            background-color: tomato;
+            /* margin: ; matra cha bhaney 4tira bata spacing  */
+            margin: 10px ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-demo">
+        <!-- .demo*num garyo bhanya 'num' anusar ko div bancha -->
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+    </div>
+</body>
+
+</html>

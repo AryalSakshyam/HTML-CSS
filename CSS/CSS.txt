@@ -1,0 +1,24 @@
+Css
+cascading stylesheet
+it is used to make web layout
+
+types of CSs
+i>Internal Css
+it is written in the html page inside </head>
+
+
+example:
+<head>
+ selector{
+	properties:value;
+	properties:value;
+	}
+  selector{
+   	 properties:value;
+    }
+</head>
+	
+
+
+
+	

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+
+.demo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.demo .box {
+    margin-top: 10%;
+    height: 350px;
+    width: 23%;
+    background-color: beige;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    /* background: linear-gradient(to right, rgb(248, 198, 105), rgb(127, 244, 127)); */
+    
+    
+    
+
+
+}
+.box:hover{
+    font-size: 0;
+}
+.box:hover::after{
+    
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ 
+ 
+.box .top1 {
+    height: 35%;
+    background: linear-gradient(to right, rgb(248, 198, 105), rgb(127, 244, 127));
+    padding-left: 85px;
+    padding-top: 25px;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box .top1:hover{
+    background-color: black;
+}
+
+
+.box .top2 {
+    height: 35%;
+    background: linear-gradient(to right, rgb(61, 41, 61), rgb(91, 91, 235));
+    padding-left: 85px;
+    /* padding-top: 25px; */
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box .top3 {
+    height: 35%;
+    background: linear-gradient(to right, rgb(222, 134, 149), rgb(248, 198, 105));
+    padding-left: 25%;
+    padding-top: 25px;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.box .top4 {
+    height: 35%;
+    background: linear-gradient(to right, rgb(247, 132, 247), rgb(148, 148, 249));
+    padding-left: 80px;
+    padding-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

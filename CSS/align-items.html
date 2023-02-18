@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aling items</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 10px 0;
+            align-items: center;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            
+        }
+        .container h3{
+            font-size: 30px ;
+            width: 45%;
+            color: rgba(100, 200, 50, 0.6);
+
+        }
+        .container .hero-img{
+            height: 300px;
+            width: 50%;
+
+        }
+        .hero-img img{
+            height: 100%;
+            width: 100%;
+        }
+        .container:hover h3{
+            color:rgb(100, 200, 50) ;
+            transition: 1s;
+
+        }
+        .container:hover{
+            background-color: rgb(210, 225, 204);
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+        align items works in y axis.Ther must be size diference between two elements for aling items and it alwyas works with repect to high size of elements
+    </pre>
+    <div class="container">
+        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, neque?</h3>
+        <div class="hero-img">
+            <img src="images/qwerty.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

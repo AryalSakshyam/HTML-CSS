@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="shortcut icon" href="images/qwerty.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 300px;
+            width: 500px;
+            border: 5px solid rgb(108, 20, 20);
+            margin: auto;
+            overflow: hidden;/*hover garda border batabbahira aaudaina*/
+
+        }
+
+        .container img { 
+
+            height: 100%;
+            width: 100%;
+            transition: all 1s;/*image zoom garney time*/
+        }
+        .container:hover img{/*image hover garna*/
+            transform: scale(1.5);/*1.0 bhanda dherai cha bhaney zoom in 1.0 kam cha bhaney zoom out*/
+        
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/qwerty.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

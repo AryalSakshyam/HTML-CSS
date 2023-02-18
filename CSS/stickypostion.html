@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/qwerty.jpg" type="image/x-icon">
+    <title>Sticky position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 50px;
+            background-color: #232f3e;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        header.left {
+            padding-left: 20px;
+        }
+
+        header .right {
+            text-align: left;
+
+        }
+
+        nav {
+            /* height: 30px; */
+            background-color: dodgerblue;
+            position: sticky;
+            /*top ma basirakcha*/
+            top: 0;
+            /*Body ko respect ma kaam garcha */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /*flex use garya cha bhaney aling-item use garery ra height milaauna sakincha*/
+
+        }
+
+        nav ul li {
+            display: inline;
+            /*block element lai in line laaunu paryo bhaney*/
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 20px;
+            /*In line element ma margin top ra bottomor padding top ra bottom ley kam gardaina*/
+            display: inline-block;
+            /**/
+        }
+
+        nav ul li .active {
+            color: #36E781;
+        }
+
+        nav ul li a:hover {
+            color: #36E781;
+            /* font-size: 22px; */
+            transform: scale(1.1);
+            transition: all 1s;
+        }
+        ul li .dropdown{
+            width: 110px;
+            background-color: darkturquoise;
+            position: absolute;
+            left: 0;
+            display: none;
+        }
+        nav ul li:hover .dropdown{
+            display: block;
+        }
+        .dropdown .sub-dropdown{
+            width: 110px;
+            background-color: rgb(85, 130, 229);
+            position: absolute;
+            left: 90%;
+            display: none;
+            top: 0;
+        }
+        .dropdown li  ul:hover .sub-dropdown {
+            display: block;
+        }
+
+        .main {
+            height: 700px;
+            /* background-color: #0f151e; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: space-around;
+            /*height define bhako bela matra kaam garcha*/
+
+        }
+
+        .main .box {
+            height: 300px;
+            width: 30%;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+
+        footer {
+            height: 80px;
+            background-color: rgb(0, 0, 0);
+        }
+        @media screen and (max-width:992px) {
+            
+           .active{
+            width: 100%;
+           }
+            .main{
+                background-color: yellowgreen;
+            }
+            .main .box{
+                width: 48%;
+            }
+            
+        }
+        @media screen and (max-width:660px){
+            
+             .active{
+                width: 100%;
+            } 
+            
+            .main{
+                background-color: teal;
+            }
+            .main .box{
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left"> <a href="#"><i class='bx bxs-envelope'>contact@example.com</i></a>
+            <a href="#"></a> +977-9841457250
+        </div>
+        <div class="right"><a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </header>
+    <nav>
+        <div class="logo">
+            <img src="images/client-4.png" alt="" width="80">
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Category</a>
+                 <ul class="dropdown">
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Laptop</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="#">Dell</a></li>
+                            <li><a href="#">HP</a></li>
+                            <li><a href="#">Acer</a></li>
+                            <li><a href="#">Mac</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">LED</a></li>
+                 </ul>
+            </li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
